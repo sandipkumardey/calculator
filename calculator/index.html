@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div>
+            <h1>QuickCal</h1>
+        </div>
+        <div>
+            <h3>Do simple calculations with ease</h3>
+        </div>
+        
+
+        <div class="calculator">
+            <input type="text" id="result" disabled>
+            <div class="buttons">
+                <button onclick="clearScreen()">C</button>
+                <button onclick="deleteLast()">DEL</button>
+                <button onclick="appendOperator('/')">/</button>
+                <button onclick="appendNumber(7)">7</button>
+                <button onclick="appendNumber(8)">8</button>
+                <button onclick="appendNumber(9)">9</button>
+                <button onclick="appendOperator('*')">*</button>
+                <button onclick="appendNumber(4)">4</button>
+                <button onclick="appendNumber(5)">5</button>
+                <button onclick="appendNumber(6)">6</button>
+                <button onclick="appendOperator('-')">-</button>
+                <button onclick="appendNumber(1)">1</button>
+                <button onclick="appendNumber(2)">2</button>
+                <button onclick="appendNumber(3)">3</button>
+                <button onclick="appendOperator('+')">+</button>
+                <button onclick="appendNumber(0)">0</button>
+                <button onclick="appendOperator('.')">.</button>
+                <button onclick="calculateResult()" class="equal">=</button>
+            </div>
+        </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
